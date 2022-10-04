@@ -1,0 +1,452 @@
+/* 1. poscionamiento 
+2. modelo de caja (box model)
+3. tipografia 
+4. visuales 
+5. otros  */
+
+/* //fuentes 
+font-family:'Clash Display', 'sans-serif';
+font-family: 'Work Sans', 'sans-serif';
+font-family: 'Outfit', 'sans-serif'; */
+
+:root{
+--complementario:#59f2e0 ;
+--azulBase:#2a66ea;
+--secundarioOscuro:#2a2a2a;
+--blancoPuro: #FFFFFF;
+--titulos: #140f26;
+--parrafos: #5c5c5d;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Clash Display', 'sans-serif';
+}
+/* //HEADER */
+nav {
+    width: 100%;
+    height: 10vh;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    background: var(--blancoPuro);
+    box-shadow: 12px 5px 60px rgba(0,0,0,0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-left{
+    height: 100%;
+}
+.navbar-right {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Clash Display', 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--titulos);
+    margin-right: 3em;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;   
+}
+.menu_item{
+    display: inline;
+    width: fit-content;
+    margin: 0.5em;
+}
+.menu_item > a{
+    text-decoration: none;
+    color: var(--titulos);
+}
+.button_whatsapp{
+    display: flex;
+    align-items: center;
+}
+
+.button_whatsapp > img {
+    width: 1em;
+    margin-right: 0.2em;
+}
+.logo{
+    width: auto;
+    height: 100%;
+    margin-left: 1em;
+}
+
+/* //BLOCK 2 */
+.block_2 {
+    background:var(--blancoPuro);
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block_2-right{
+    width: 56em;
+    height: auto;
+}
+.block_2-left_title{
+    font-weight: 600;
+    font-size: 6.4em;
+    line-height: 78.72px;
+    width: 90%;
+}
+.block_2-left_rectangule{
+    width: 100%;
+}
+.block_2-left_p1, .block_2-left_p2 {
+    font-family: 'Work Sans', 'sans-serif';
+    font-weight: 400;
+    font-size: 2.8em;
+    line-height: 32.84px;
+    margin: 1em 1em 1em 0;
+    color: var(--parrafos);
+}
+
+/* //BLOCK 3 */
+.block_3{
+    background: var(--blancoPuro)
+}
+.block_3_container {
+    font-family: 'Work Sans';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.block_3_container_items{
+    background: var(--blancoPuro);
+    padding: 40px;
+    margin: 20px;
+    width: 27em;
+    height: 24em;
+    box-shadow: 0px 10px 40px rgba(34, 34, 34, 0.05);
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.block_3_container_items_logo{
+    display: flex;
+
+}
+
+.block_3_container_items_title{
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 3.8em;
+    color: var(--azulBase);
+    margin-right: 4em;
+}
+
+.block_3_container_items_text{
+    color: var(--parrafos);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+}
+
+/* //BLOCK 4 */
+.block_4{
+    background: linear-gradient(119.39deg, #F9F9F9 17.84%, rgba(255, 255, 255, 0) 53.81%);
+    width: 100%;
+    height: 130vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block_4-left{
+    width: 56em ;
+}
+.block_4-left_img{
+    width: 120em;
+}
+.block_4-right{
+    width: 56em;
+    height: 100%;
+}
+.block_4-right_title{
+    font-size: 'Clash Display';
+    font-style: normal;
+    color: var(--titulos);
+    font-weight: 600;
+    font-size: 6.4em;
+    line-height: 79px;
+    width: 100%;
+    margin-top: 3em;
+}
+.block_4-right_text{
+    font-family:'outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2em;
+    line-height: 40px;
+    margin-top: 2em;
+    color: var(--parrafos);
+}
+.block_4-right_text_item{
+    margin-bottom: 1em;
+}
+/* //block 5 */
+.block_5{
+    background: var(--blancoPuro);
+    width: 100%;
+    height: 130vh;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block_5-left{
+    width: 56em ;
+}
+.block_5-left_img{
+    width: 120em;
+}
+.block_5-right{
+    width: 56em;
+    height: 100%;
+}
+.block_5-right_title{
+    font-size: 'Clash Display';
+    color: var(--titulos);
+    font-weight: 600;
+    font-size: 6.4em;
+    line-height: 79px;
+    width: 100%;
+    margin-top: 3em;
+}
+.block_5-right_text{
+    font-family:'outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2em;
+    line-height: 40px;
+    margin-top: 2em;
+    color: var(--parrafos);
+}
+.block_5-right_text_item{
+    margin-bottom: 1em;
+}
+
+/* //block 6 */
+.block_6{
+    width: 75%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.block_6-right{
+    width: 56em ;
+}
+.block_6-right_img{
+    width: 100em;
+}
+.block_6-left{
+    width: 100%;
+    margin-left: 8em;
+}
+.block_6-left_title{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 49px;
+    width: 8em;
+}
+.block_6-left_text{
+    font-family:'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    width: 18em;
+    margin-top: 0.8em;
+    color:var(--parrafos)
+}
+.block_6-left_text2_items{
+    font-family:'Outfit';
+    font-style: normal;
+    color: var(--parrafos);
+    font-weight: 600;
+    font-size: 3.2em;
+    line-height: 40px;
+    margin: 0.8em 0 0.8em 0;
+}
+
+/* //block 7 */
+.block_7{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+}
+.block_7-left_img{
+    background-position: center;
+    background: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.block_7-right{
+    position: absolute;
+    margin-left: 80em;
+}
+.block_7-right_titulo{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+    padding: 0;
+    color:var(--blancoPuro);
+    
+}
+.block_7-right_text{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+}
+.block_7-right_text_items{
+    color: var(--blancoPuro);
+    margin: 2em 0 2em 0;
+
+}
+
+/*//block 8 */
+.block_8_title{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    margin-top: 224px;
+}
+
+.block_8_card_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow:12px 5px 60px rgba(0,0,0,0.18);
+    margin-top: 84px;
+}
+
+.block_8_card_1_img{
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.block_8_card_1_title{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--titulos);
+    margin-top: 20px;
+}
+
+.block_8_card_1_text{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4em;
+    line-height: 28px;
+    color:var(--parrafos);
+    margin-top: 3em;
+    width: 70%;
+}
+
+.block_8_card_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #FFFFFF;
+    border-radius: 15px;
+    box-shadow:12px 5px 60px rgba(0,0,0,0.18);
+    margin-top: 64px;
+}
+
+.block_8_card_2_img{
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.block_8_card_2_title{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--titulos);
+    margin-top: 20px;
+}
+
+.block_8_card_2_text{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4em;
+    line-height: 28px;
+    color:var(--parrafos);
+    margin-top: 3em;
+    width: 70%;
+}
+
+/* //block_9 */
+.block_9{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.block_9_title{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: var(--titulos);
+}
+
+.block_9_p1{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--parrafos);
+}
+.block_9_p2{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--parrafos);
+}
